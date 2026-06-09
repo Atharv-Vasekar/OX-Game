@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
 .container{
     width: 50vw;
     height: 50vh;
@@ -11,10 +18,18 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap:0;
+    margin-bottom: 50px;
 }
 .container .box{
     border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.score {
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
 }
