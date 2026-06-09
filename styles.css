@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:0;
+}
+.container .box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
