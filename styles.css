@@ -53,6 +53,7 @@ body{
 .restart-container{
     width: 50vw;
     text-align: center;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .restart{
