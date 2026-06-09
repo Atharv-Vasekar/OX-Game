@@ -33,3 +33,31 @@ body{
     justify-content: space-around;
     font-size: 2rem;
 }
+
+.result{
+    position: absolute;
+    top: 20px;
+    width: 50vw;
+    text-align: center;
+}
+.result .result-text{
+    display: inline-block; 
+    font-size: 2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.restart-container{
+    width: 50vw;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.restart{
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
