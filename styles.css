@@ -1,3 +1,18 @@
+:root {
+    --red: #ff0055;
+    --blue: #00d2ff;
+    --green: #00ff66;
+    --orange: #ff9f00;
+
+    /* The Secret Sauce: Deep dark backgrounds */
+    --box-bg: #0a0e17;          /* Deep midnight blue/black */
+    --bg: #121824;  /* Slightly lighter for cards/buttons */
+
+    /* Instead of harsh shadows, use multiple layered blurs for a "glow" */
+    --glow-blue: 0 0 5px #00d2ff, 0 0 15px #00d2ff, 0 0 30px #00d2ff;
+    --glow-red: 0 0 5px #ff0055, 0 0 15px #ff0055, 0 0 30px #ff0055;
+    --shadow-dark: #c5c9d0;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,20 +28,31 @@ body{
 .container{
     width: 50vw;
     height: 50vh;
-    border: 2px solid black;
     display: grid;
+    box-shadow: 0 5px 15px var(--shadow-dark);
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap:0;
     margin-bottom: 50px;
 }
 .container .box{
-    border: 2px solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.box.box1, .box.box2, .box.box4, .box.box5{
+    border-right: 2px solid var(--green);
+    border-bottom: 2px solid var(--green);
+}
+
+.box.box3, .box.box6{
+    border-bottom: 2px solid var(--green);
+}
+
+.box.box7, .box.box8{
+    border-right: 2px solid var(--green);
+}
 .score {
     width: 50vw;
     display: flex;
